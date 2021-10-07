@@ -10,6 +10,7 @@
     --border-button: .1rem solid #B3B3B3;
     --grey: #4b4b4d;
     --grey-light: #CCCCCC;
+    --grey-middle: #E6E6E6;
     --grey-dark: #B3B3B3;
 }
 
@@ -222,11 +223,10 @@ section {
 .for-whom-container .for-whom-title::after {
     content: '';
     position: absolute;
-    margin-bottom: 50px;
     height: 173px;
     width: 100vw;
     z-index: 5;
-    background: var(--white);
+    background: var(--grey-middle);
     clip-path: polygon(0 0, 23% 0, 100% 100%, 0% 100%);
 }
 

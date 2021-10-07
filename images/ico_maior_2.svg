@@ -1,7 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.0//EN" "http://www.w3.org/TR/2001/REC-SVG-20010904/DTD/svg10.dtd">
 <!-- Creator: CorelDRAW X7 -->
-<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="0mm" height="0mm" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
-viewBox="0 0 -2147483648 -2147483648"
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="17.68mm" height="8.926mm" version="1.0" shape-rendering="geometricPrecision" text-rendering="geometricPrecision" image-rendering="optimizeQuality" fill-rule="evenodd" clip-rule="evenodd"
+viewBox="0 0 439378 221826"
  xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+     <clipPath id="id0">
+      <path d="M98661 171551l340717 0 -98664 50275 -340714 0 98661 -50275z"/>
+     </clipPath>
+ </defs>
+ <g id="Camada_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_2896256412944">
+   <g>
+    <g clip-path="url(#id0)">
+     <image x="0" y="171551" width="439378" height="50275" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFUAAAALCAIAAAH2FGYcAAAACXBIWXMA
+ABLDAAAVOQGZMRt4AAADQ0lEQVR4nK1WiVLbMBC1LsuScRJa+v//V4YyhPrS2ScpMSkYB0qXGY/Q
+9fR23+6GhxCqCxvGyTtXxoxzrRqO0Tyb+/ufx+NTWZBS3t392O/35V9+eYexzpg5hogxoUTKRnCW
+7nh8fPz18DCbuey7Pdx++34nZb1yB+z5+fj0dByG4fl4nI25XCIV0Vp1u51WqtvvW63Xr1gMs3Y2
+1rvoX28gjArGKeeCUX650A/DNE0Ah/W/+1jFy1VakW7X7Q+HrutuFvwCNeLRfY/zYz/EKnDO9ofd
+4lD4Aw9WbbscW+zd91+add5aO09T8G6cJu+9s3aa4fAQYtw+i6fgBY1s6rpGaJpGcSG01nTZ8PYM
+wmmtmYbBGDOMg/PeTGaeJ2ddqLbwEKXkWMaV0kLwRimohsMBjcIffefUXy+AN3yOGG656XbOu93h
+cIUi44Smy/FljL4Hs3XDR6LwyhCUGKNzLmbdv5XZW4PwCL4E0uOEEOTICf4jeEjSELw10MGIiEAN
+PgTIIvgQN4NCgSRrAbUzJhspRC2bBgkQOKPb8NYHAxwgOWuMhcads+MwOueT8rZRKyJq0QCprnmq
+KUpACowp3eItlztX4JFIYDb2PdxrrBn6EZKf4IBNyCoLENUFFAGpWg28tm1ToueqtnrkBb7kMSqh
+P7sX+nfB4y6ouj5XrTVUSjlFlgMP+oPsKb6NKiVm+8Uv8NiotPZZVlq3PuX2FU2VIgvZQ03Q1VWw
+lRv+QfnbZnMixKTNVMFBBh4NuTUEzHqPAWZcHmAikv8ASgkyP2VT8j9JXkDES1FgNP0tnrouvo8b
+6iS+4GJzg4MrIZs0g4IJ5biyCj/Ysq3MFF980SCwpEqe3o88g9AwqHOGVblXV5l5lR3RZOmvauMT
+/EtHxaBwA7EqsyqdGh3KnHna5JEc/KSur7JFJUF2YVDntE6PBt2Fs0iWJuvTal3LV0HesK3ahy/K
+H3pulUONIjhPKc7IzPKLBjI22SOpI+ei+BWeyODENrWICpRYJiPPrNDFE2dRJiU7xbmhebC0ks/a
+Cn8wj+GUw+lB6BQ+wNvIKyEk1qL3N22bk/nLtSOzLUJNvZsUF9DihfRjoiQzTZ39n0lu2B9nquua
+JTA+CAAAAABJRU5ErkJggg=="/>
+    </g>
+   </g>
+   <path fill="#244670" fill-rule="nonzero" d="M73116 214388l181584 0c9059,0 17844,-7341 19623,-16402l35645 -181584c1777,-9058 -4126,-16402 -13184,-16402l-181584 0c-9058,0 -17846,7344 -19623,16402l-35645 181584c-1777,9061 4126,16402 13184,16402z"/>
+   <g>
+    <polygon fill="white" fill-rule="nonzero" points="142375,67686 147912,67686 147912,147035 142375,147035 "/>
+    <path fill="white" fill-rule="nonzero" d="M210263 119030l-32243 0 -11071 28003 -6131 0 31912 -79675 3526 0 31264 79675 -6240 0 -11017 -28003zm-30235 -4995l28386 0 -10801 -28605c-904,-2241 -1990,-5355 -3255,-9334 -977,3474 -2046,6623 -3204,9444l-11126 28495z"/>
+   </g>
+  </g>
+ </g>
 </svg>
