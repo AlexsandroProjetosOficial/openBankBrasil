@@ -384,17 +384,48 @@ section {
     object-fit: cover;
   }
 
+  .swiper {
+    width: 100%;
+    height: 300px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .swiper-slide {
+    background-size: cover;
+    background-position: center;
+  }
+
   .mySwiper2 {
-    height: 500px;
+    height: 80%;
     width: 100%;
   }
 
   .mySwiper {
-    height: 80px;
-    box-sizing: border-box;
-    padding: 10px 0;
+    height: 20%;
+        box-sizing: border-box;
+        padding: 10px 0;
     margin-top: 50px;
   }
+
+  .mySwiper .swiper-slide {
+        width: 25%;
+        height: 100%;
+        opacity: 0.4;
+      }
+
+      .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        cursor: pointer;
+      }
+
 /*.container-services-for-companies .services-for-companies {
     display: flex;
     align-items: center;
