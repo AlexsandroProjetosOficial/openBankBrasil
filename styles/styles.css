@@ -255,11 +255,14 @@ section {
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 400px;
+    height: 340px;
 }
 
 .for-whom-container .for-whom .whom .image-arrow-90deg {
-    width: 140px;
-    transform: rotate(-45deg);
+    width: 100%;
+    height: 100%;
+    /* transform: rotate(-45deg); */
 }
 
 .for-whom-container .for-whom .whom .company {
