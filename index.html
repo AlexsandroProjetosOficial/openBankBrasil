@@ -5,109 +5,290 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+    <link rel="manifest" href="/images/site.webmanifest">
+    <link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
-    <title>Cards</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.14.2/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/animation.gsap.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.8.0/gsap.min.js"
+        integrity="sha512-eP6ippJojIKXKO8EPLtsUMS+/sAGHGo1UN/38swqZa1ypfcD4I0V/ac5G3VzaHfDaklFmQLEs51lhkkVaqg60Q=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="video-test/vendor/video.js/video-js.css" rel="stylesheet">
+    <link href="video-test/vendor/video.js/videojs-playlist-ui.vertical.css" rel="stylesheet">
+
+    <script>
+        var siteUrl = "http://127.0.0.1:5500/";
+    </script>
+    <script>
+        var periciaVideo = "videos/video1.mp4",
+            periciaVideoTitle = "Perícia",
+            contabilidadeVideo = "videos/video2.mp4",
+            contabilidadeVideoTitle = "Contabilidade",
+            consultoriaVideo = "videos/video3.mp4",
+            consultoriaVideoTitle = "Consultoria e Auditoria",
+            advocaciaVideo = "videos/video4.mp4",
+            advocaciaVideoTitle = "Advocacia e Paralegal",
+            openbankVideo = "videos/video5.mp4",
+            openbankVideoTitle = "OpenBank",
+            empresasVideo = "videos/video6.mp4",
+            empresasVideoTitle = "Empresas";
+
+    </script>
+    <script type="text/javascript" src="video-test/js/video.min.js"></script>
+    <script type="text/javascript" src="video-test/js/homepage.min.js"></script>
+
+
+
+    <title>OpenBank | Brasil</title>
+
 </head>
 
 <body>
+
     <section id="header">
+
         <header class="header">
-            <img src="./images/logo.svg" alt="" class="logo">
-            <div class="buttons">
-                <button type="button" class="btn">
-                    <i class="fas fa-arrow-right"></i>
-                    minha conta
-                </button>
-                <button type="button" class="btn">
-                    <i class="fas fa-arrow-right"></i>
-                    contato comercial
-                </button>
-            </div>
-            <div class="menu-bar">
-                <span class="menu-text">menu</span>
-                <i class="fas fa-bars"></i>
+
+            <div id="menu-container">
+                <div id="menu-dark-bg"></div>
+                <div id="menu-slash-bg">
+                    <div id="menus">
+                        <div id="main-menu">
+                            <ul>
+                                <li class="menu-label"><a href="/"><span>Home</span></a></li>
+                                <li class="menu-label" id="servicoslnk">
+                                    <a href="/#servicos" target="_top"><span>Serviços</span></a>
+                                </li>
+                                <li class="menu-label" id="contratelnk">
+                                    <a href="/#contrate"><span>Contrate</span></a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div id="sub-menu">
+                            <div id="contact-info-container">
+                                <div id="contact-info">
+                                    <a href="/">
+                                        <img src="/images/logoMenu.svg" style="margin-bottom:20px;top:0"></a>
+                                    <a href="/#fazemos">
+                                        <h3 id="fazemoslnk">O
+                                            que fazemos</h3>
+                                    </a>
+                                    <h3>Serviços</h3>
+                                    <p id="gestaolnk" class="name"><a href="/#servicos">Gestão e
+                                            Compliance</a></p>
+                                    <p id="pericialnk" class="name"><a href="/#servicos">Contabilidade
+                                            e
+                                            Perícia</a></p>
+                                    <p id="auditorialnk" class="name"><a href="/#servicos">Consultoria e
+                                            Auditoria</a></p>
+                                    <p id="advocacialnk" class="name"><a href="/#servicos">Advocacia e
+                                            Paralegal</a></p>
+                                    <a href="/#vitria">
+                                        <h3 id="vitrialnk">Recursos
+                                            da IA Vitria</h3>
+                                    </a>
+                                    <a href="/#contrate">
+                                        <h3 id="porquelnk">Por
+                                            que contratar</h3>
+                                    </a>
+                                    <a href="/#contrate">
+                                        <h3 id="contrate1lnk">Informações
+                                            e contratação</h3>
+                                    </a>
+                                    <a href="/#sobre">
+                                        <h3 id="sobrelnk">Sobre
+                                            a
+                                            Openbank Brasil</h3>
+                                    </a>
+                                    <a href="/#contato">
+                                        <h3 id="contatolnk">Contato</h3>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <a href="/">
+                    <div style="position: relative; top: 0; left: 12rem;" id="logos">
+
+
+                        <img src="./images/logoHome.svg" alt="Logo" class="logo-home" id="logo-home">
+                    </div>
+                </a>
+                <div class="buttons">
+                    <button type="button" class="btn">
+                        <i class="fas fa-arrow-right"></i>
+                        minha conta
+                    </button>
+                    <button type="button" class="btn">
+                        <i class="fas fa-arrow-right"></i>
+                        contato comercial
+                    </button>
+                </div>
+                <div class="menu-bar">
+                    <span class="menu-text">menu</span>
+                    <!-- <img src="./images/hamburger.svg"> -->
+                    <div id="menu-button" class="burger-white">
+                        <!-- menu button -->
+                        <svg id="hamburger-top-svg" class="hamburger-svg" viewBox="0 0 40 6"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <polygon points="0,0 40,0 40,6 0,6"></polygon>
+                        </svg>
+                        <svg id="hamburger-bottom-svg" class="hamburger-svg" viewBox="0 0 40 6"
+                            xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <polygon points="0,0 40,0 40,6 0,6"></polygon>
+                        </svg>
+                    </div>
+                </div>
+
             </div>
         </header>
     </section>
-    <section class="home">
-        <div class="home-message">
-            <h1>A revolução na gestão, auditoria e perícia em contratos bancários.</h1>
+    <article class="video-overlay" id="homepage">
+        <div class="vertical-align">
+            <h1 class="font-light">
+                <p>A revolução na gestão,
+                    <br>
+                </p>
+                <p>auditoria e perícia em</p>
+                <p>contratos bancários</p>
+            </h1><br /><br />
+            <a href="#" class="slanted-button bg-light" id="tbwa-videos"><button type="button" class="btn">
+                    <i class="fas fa-arrow-right"></i>
+                    assista
+                </button></a>
+
+        </div>
+
+    </article>
+    <section id="landing-container" class="row collapse">
+
+        <article id="landing-video" class="full-width-video">
+            <video poster="" id="landing-vid" playsinline autoplay muted loop>
+                <source src="video-test/videos/video1.mp4" type="video/mp4">
+            </video>
+
+
+        </article>
+
+
+        <article id="main-video-player" class="player">
+            <video id="video" class="video-js" height="300" width="300" controls preload="auto">
+                <source src="video-test/videos/video1.mp4" type="video/mp4">
+            </video>
+        </article>
+
+        <div class="tbwa-player playlist" id="main-video-playlist">
+        </div>
+    </section>
+    <div class="home">
+        <!-- <div class="home-message">
+            
+            <h1>A revolução na gestão, auditoria e perícia em contratos
+                bancários.</h1>
             <button type="button" class="btn">
                 <i class="fas fa-arrow-right"></i>
                 assista
             </button>
         </div>
-        <!-- <img src="./images/WhatsApp Image 2021-10-07 at 10.38.41 AM.jpeg" alt=""> -->
-    </section>
+        <div class="image-home">
+            <img src="./images/imagemHome.png" alt="">
+        </div> -->
+    </div>
     <section class="service-container">
         <div class="service">
-            <span class="slogan">O que a <strong>OpenBank</strong> Brasil <br />faz para o seu negócio.</span>
-            <button type="button" class="btn">
-                <i class="fas fa-arrow-right"></i>
-                quero saber mais
-            </button>
+            <span class="slogan">O que a <strong> OpenBank </strong> Brasil
+                <br />faz para o seu negócio.</span>
+
+            <a href="#vitria"> <button type="button" class="btn">
+                    <i class="fas fa-arrow-right"></i>
+                    quero saber mais
+                </button></a>
         </div>
         <div class="service">
             <span class="service-text">
-                Realizamos um serviço independente de análise das operações e lançamentos dos contratos bancários
+                Realizamos um serviço independente de análise das operações
+                e lançamentos dos contratos bancários
                 por meo da inteligência Vitria.
-                Entregamos de forma automatizada, segura e organizada uma análise completa, detalhada, precisa e
+                Entregamos de forma automatizada, segura e organizada uma
+                análise completa, detalhada, precisa e
                 isenta dos lançamentos relativos
-                às operações bancárias e suas evoluções ao longo do tempo. Com essas informações, a gestão, a
+                às operações bancárias e suas evoluções ao longo do tempo.
+                Com essas informações, a gestão, a
                 auditoria e a contabilidade ganham um
                 aliado de maior precisão e alta performace.
+
             </span>
         </div>
     </section>
+    <a id="servicos"></a>
     <section class="for-whom-container">
         <div class="for-whom-title">
-            <span class="title">Para quem são os serviços <strong>OpenBank</strong> Brasil</span>
-            <span class="subtitle">Um conjunto de recursos que agrega valor para cada perfil</span>
+            <span class="title">Para quem são os serviços da <strong>&nbsp;OpenBank&nbsp;</strong>
+                Brasil </span>
+            <span class="subtitle">Um conjunto de recursos que agrega valor
+                para cada perfil</span>
         </div>
         <div class="for-whom">
             <div class="whom">
-                <img class="image-arrow-90deg" src="./images/divisor_v.svg" alt="">
+                <img class="image-arrow-90deg" src="./images/separatorVertical.svg" alt="">
                 <div class="company">
-                    <img src="./images/wifi-low.svg" alt="">
+                    <img src="./images/pequenasEmpresas.svg" alt="">
                     <h1>pequenas empresas</h1>
                     <div class="subtitle">
-                        <h3>Auxiliamos departamentos contábeis, financeiros e coontrollers
-                            de forma a otimizar a gestão das operações e lançamentos
+                        <h3>Auxiliamos departamentos contábeis, financeiros
+                            e coontrollers
+                            de forma a otimizar a gestão das operações e
+                            lançamentos
                             dos contratos bancários.
                         </h3>
-                        <a href="#">saiba mais+</a>
+                        <a href="#">saiba mais +</a>
                     </div>
                 </div>
             </div>
             <div class="whom">
-                <img class="image-arrow-90deg" src="./images/divisor_v.svg" alt="">
+                <img class="image-arrow-90deg" src="./images/separatorVertical.svg" alt="">
                 <div class="company">
-                    <img src="./images/wifi-high.svg" alt="">
+                    <img src="./images/mediasEmpresas.svg" alt="">
                     <h1>médias e grandes empresas</h1>
                     <div class="subtitle">
                         <h3>
-                            Tenha acesso a um conjunto de recursos que automatiza
-                            a obtenção de dados, reduz os trabalhos manuais otimiza
+                            Tenha acesso a um conjunto de recursos que
+                            automatiza
+                            a obtenção de dados, reduz os trabalhos manuais
+                            otimiza
                             seus processos.
                         </h3>
-                        <a href="#">saiba mais+</a>
+                        <a href="#">saiba mais +</a>
                     </div>
                 </div>
             </div>
             <div class="whom">
-                <img class="image-arrow-90deg" src="./images/divisor_v.svg" alt="">
+                <img class="image-arrow-90deg" src="./images/separatorVertical.svg" alt="">
                 <div class="company">
-                    <img src="./images/accounting.svg" alt="">
+                    <img src="./images/contabilidade.svg" alt="">
                     <h1>contabilidade</h1>
                     <div class="subtitle">
                         <h3>
-                            Auxiliamos departamentos contábeis, financeiros e coontrollers de forma
-                            a otimizar a gestão das operações e lançamentos dos contratos bancárias.
+                            Auxiliamos departamentos contábeis, financeiros
+                            e coontrollers de forma
+                            a otimizar a gestão das operações e lançamentos
+                            dos contratos bancárias.
                         </h3>
-                        <a href="#">saiba mais+</a>
+                        <a href="#">saiba mais +</a>
                     </div>
                 </div>
             </div>
@@ -115,46 +296,52 @@
         <div class="separator"></div>
         <div class="for-whom">
             <div class="whom">
-                <img class="image-arrow-90deg" src="./images/divisor_v.svg" alt="">
+                <img class="image-arrow-90deg" src="./images/separatorVertical.svg" alt="">
                 <div class="company">
-                    <img src="./images/house.svg" alt="">
+                    <img src="./images/home.svg" alt="">
                     <h1>advocacia e paralegal</h1>
                     <div class="subtitle">
                         <h3>
-                            Obtenha acesso à dados, gráficos e insights para aumentar
-                            a previsibilidade do curso das ações judiciais e apoiar às
+                            Obtenha acesso à dados, gráficos e insights para
+                            aumentar
+                            a previsibilidade do curso das ações judiciais e
+                            apoiar às
                             atividades de due diligence.
                         </h3>
-                        <a href="#">saiba mais+</a>
+                        <a href="#">saiba mais +</a>
                     </div>
                 </div>
             </div>
             <div class="whom">
-                <img class="image-arrow-90deg" src="./images/divisor_v.svg" alt="">
+                <img class="image-arrow-90deg" src="./images/separatorVertical.svg" alt="">
                 <div class="company">
-                    <img src="./images/consulting.svg" alt="">
+                    <img src="./images/consultoria.svg" alt="">
                     <h1>consultoria e auditoria</h1>
                     <div class="subtitle">
                         <h3>
-                            Uma ferramenta indispensável para apior atividades de Consulting,
-                            Deals, Forencics, Audit, Tax&Reporting para otimizar o processo de
+                            Uma ferramenta indispensável para apior
+                            atividades de Consulting,
+                            Deals, Forencics, Audit, Tax&Reporting para
+                            otimizar o processo de
                             análise das informações financeiras.
                         </h3>
-                        <a href="#">saiba mais+</a>
+                        <a href="#">saiba mais +</a>
                     </div>
                 </div>
             </div>
             <div class="whom">
-                <img class="image-arrow-90deg" src="./images/divisor_v.svg" alt="">
+                <img class="image-arrow-90deg" src="./images/separatorVertical.svg" alt="">
                 <div class="company">
-                    <img src="./images/copy.svg" alt="">
+                    <img src="./images/pericia.svg" alt="">
                     <h1>perícia</h1>
                     <div class="subtitle">
                         <h3>
-                            Tenha acesso a um conjunto de recursos que automatiza a obtenção
-                            de dados, reduz os trabalhos manuais e otimiza seus processos.
+                            Tenha acesso a um conjunto de recursos que
+                            automatiza a obtenção
+                            de dados, reduz os trabalhos manuais e otimiza
+                            seus processos.
                         </h3>
-                        <a href="#">saiba mais+</a>
+                        <a href="#">saiba mais +</a>
                     </div>
                 </div>
             </div>
@@ -167,52 +354,153 @@
         </button>
         <div class="services-for-companies-text">
             <h3>serviços para sua empresa</h3>
-            <h1>Recursos desenvolvidos para sua empresa ir além dos números e facilitar a sua rotina:</h1>
+            <h1>Recursos desenvolvidos para sua empresa ir além dos números
+                e facilitar a sua rotina:</h1>
         </div>
     </section>
+    <a id="vitria"></a>
     <section class="banner">
-        <div class="imgBx">
-            <img src="./images/tela.png" alt="Imagem1" class="active">
-            <img src="./images/13.jpg" alt="Imagem1">
-            <img src="./images/13.jpg" alt="Imagem1">
-            <img src="./images/13.jpg" alt="Imagem1">
-            <img src="./images/13.jpg" alt="Imagem1">
-            <img src="./images/13.jpg" alt="Imagem1">
-            <img src="./images/13.jpg" alt="Imagem1">
+        <div style="--swiper-navigation-color: #fff;
+                --swiper-pagination-color: #fff" class="swiper mySwiper2">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="images/tela.png" />
+                </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+        <div thumbsSlider="" class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/dollar.svg" onclick="exib('dollar');" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/ia.svg" onclick="exib('ia');" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/house.svg" onclick="exib('house');" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/wallet.svg" onclick="exib('wallet');" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/calculator.svg" onclick="exib('calculator');" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/chart.svg" onclick="exib('chart');" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/lamp.svg" onclick="exib('lamp');" />
+                </div>
+            </div>
         </div>
     </section>
     <section class="contentBx">
-        <div class="icons" id="icons">
-            <img src="./images/ico_maior_1.svg" alt="Imagem1" id="maior1" class="active">
-            <img src="./images/ico_maior_2.svg" alt="Imagem1" id="maior2">
-            <img src="./images/ico_maior_3.svg" alt="Imagem1" id="maior3">
-            <img src="./images/ico_maior_4.svg" alt="Imagem1" id="maior4">
-            <img src="./images/ico_maior_5.svg" alt="Imagem1" id="maior5">
-            <img src="./images/ico_maior_6.svg" alt="Imagem1" id="maior6">
-            <img src="./images/ico_maior_7.svg" alt="Imagem1" id="maior7">
-
-            <img src="./images/ico_menor_1.svg" alt="Imagem1" id="menor" class="menor">
-            <img src="./images/ico_menor_2.svg" alt="Imagem1" id="menor" class="active menor">
-            <img src="./images/ico_menor_3.svg" alt="Imagem1" id="menor" class="active menor">
-            <img src="./images/ico_menor_4.svg" alt="Imagem1" id="menor" class="active menor">
-            <img src="./images/ico_menor_5.svg" alt="Imagem1" id="menor" class="active menor">
-            <img src="./images/ico_menor_6.svg" alt="Imagem1" id="menor" class="active menor">
-            <img src="./images/ico_menor_7.svg" alt="Imagem1" id="menor" class="active menor">
-        </div>
-        <div class="contentText">
+        <div class="contentText active" id="dollar">
             <h1>Gestão de Contas</h1>
             <h3>
-                Obtenha um espelho dos extratos de forma automática e segura diretamente dos bancos;
-                Visualize os lançamentos de forma organizada e classificados de acordo com o Banco Central;
-                Defina o que é matéria de pesquisa e faça buscas por períodos, valores e palavras-chave.
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
+            </h3>
+        </div>
+        <div class="contentText" id="ia">
+            <h1>Inteligência Artificial</h1>
+            <h3>
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
+            </h3>
+        </div>
+        <div class="contentText" id="house">
+            <h1>Build</h1>
+            <h3>
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
+            </h3>
+        </div>
+        <div class="contentText" id="wallet">
+            <h1>Gestão de carteira de cliente</h1>
+            <h3>
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
+            </h3>
+        </div>
+        <div class="contentText" id="calculator">
+            <h1>Gestão de Calculos</h1>
+            <h3>
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
+            </h3>
+        </div>
+        <div class="contentText" id="chart">
+            <h1>Gestão através de graficos</h1>
+            <h3>
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
+            </h3>
+        </div>
+        <div class="contentText" id="lamp">
+            <h1>Gestão de suas idéias</h1>
+            <h3>
+                Obtenha um espelho dos extratos de forma automática e segura
+                diretamente dos bancos;
+                Visualize os lançamentos de forma organizada e classificados
+                de acordo com o Banco Central;
+                Defina o que é matéria de pesquisa e faça buscas por
+                períodos, valores e palavras-chave.
             </h3>
         </div>
     </section>
+    <a id="contrate"></a>
     <section class="hire">
         <h1>Por que contratar a <strong> OpenBank </strong> Brasil</h1>
         <h3>
-            Não somos apenas uma empresa de tecnologia, mas sim um ecossistema onde a tecnologia é apenas o meio.
-            Para garantir a execução de nossa missão, embasamos nossas atividades em três pilares:
+            Não somos apenas uma empresa de tecnologia, mas sim um
+            ecossistema onde a tecnologia é apenas o meio.
+            Para garantir a execução de nossa missão, embasamos nossas
+            atividades em três pilares:
         </h3>
         <div class="pilares">
             <div class="pilar">
@@ -255,21 +543,23 @@
                 <strong> simples </strong> e flexível
             </span>
             <div class="icons-contact">
+                <img src="./images/whatsapp.svg" alt="">
                 <img src="./images/chat.svg" alt="">
-                <img src="./images/telefone.svg" alt="">
-                <img src="./images/telefone.svg" alt="">
+                <img src="./images/phone.svg" alt="">
             </div>
         </div>
         <div class="img-woman">
-            <img src="./images/tela.png" alt="">
+            <img src="./images/woman.png" alt="">
         </div>
     </div>
     <section class="plan">
         <div class="list">
             <ul>
                 <li>Escolha um plano de assinatura de acordo com seu perfil;</li>
-                <li>São planos flexíveis de acordo com o período e o volume das suas necessidades;</li>
-                <li>A qualquer tempo, durante seu período de assinatura, você conta com nosso apoio técnico;</li>
+                <li>São planos flexíveis de acordo com o período e o volume
+                    das suas necessidades;</li>
+                <li>A qualquer tempo, durante seu período de assinatura,
+                    você conta com nosso apoio técnico;</li>
             </ul>
         </div>
         <div class="price">
@@ -277,17 +567,7 @@
                 <header>
                     <h1>BASIC</h1>
                     <div class="separator">
-                        <svg width="183" height="47" viewBox="0 0 183 47" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M78.6497 35.6153L87.8521 46.3264L98.2031 35.7686L182.589 35.3097V0.421814H0.601654V35.6153H78.6497Z"
-                                fill="#FEFEFE" />
-                        </svg>
-                        <svg width="47" height="26" viewBox="0 0 47 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M44.1718 3.43476L46.3052 0.987274H0.180023L23.3757 25.46L44.1718 3.43476Z"
-                                fill="#244670" />
-                        </svg>
+                        <img src="./images/separatorHorizontal.svg" alt="">
                     </div>
                 </header>
                 <main>
@@ -303,21 +583,12 @@
                 <header>
                     <h1>PRO</h1>
                     <div class="separator">
-                        <svg width="183" height="47" viewBox="0 0 183 47" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M78.6497 35.6153L87.8521 46.3264L98.2031 35.7686L182.589 35.3097V0.421814H0.601654V35.6153H78.6497Z"
-                                fill="#FEFEFE" />
-                        </svg>
-                        <svg width="47" height="26" viewBox="0 0 47 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M44.1718 3.43476L46.3052 0.987274H0.180023L23.3757 25.46L44.1718 3.43476Z"
-                                fill="#244670" />
-                        </svg>
+                        <img src="./images/separatorHorizontal.png" alt="">
                     </div>
                 </header>
                 <main>
-                    <h3>Pague apenas o que utilizar de acordo com a quantidade de registros</h3>
+                    <h3>Pague apenas o que utilizar de acordo com a
+                        quantidade de registros</h3>
                 </main>
                 <footer>
                     <button type="button">saiba mais</button>
@@ -327,17 +598,7 @@
                 <header>
                     <h1>BUSINESS</h1>
                     <div class="separator">
-                        <svg width="183" height="47" viewBox="0 0 183 47" fill="none"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M78.6497 35.6153L87.8521 46.3264L98.2031 35.7686L182.589 35.3097V0.421814H0.601654V35.6153H78.6497Z"
-                                fill="#FEFEFE" />
-                        </svg>
-                        <svg width="47" height="26" viewBox="0 0 47 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd"
-                                d="M44.1718 3.43476L46.3052 0.987274H0.180023L23.3757 25.46L44.1718 3.43476Z"
-                                fill="#244670" />
-                        </svg>
+                        <img src="./images/separatorHorizontal.svg" alt="">
                     </div>
                 </header>
                 <main>
@@ -360,33 +621,149 @@
                 <i class="fas fa-arrow-right"></i>
                 quero começar já!
             </button>
-            <img src="./images/13.jpg" alt="">
+            <img src="./images/city.png" alt="">
             <span>Sobre a <strong> OpenBank </strong> Brasil</span>
         </div>
-        <img class="img-logo" src="./images/copy.svg" alt="">
-        <div class="description-about">
-            <span>
-                Acreditamos em um mundo donde o equelíbrio e a transparência
-                são condições findamentais para sua sustentabilidade. Em razão
-                disso, investimos na inocação que empodera pessoas e negócios
-                frente ao ja poderoso sistema financeiro. Para que bancos e 
-                clientes joguem sempre com as mesmas regras. Para ganharem
-                juntos, para ganharem o justo. Para estarem todos de um mesmo
-                lado. Temos um olhar tecnológico minucioso que ajuda a
-                encontrar soluções para essa necessária relação de confiança,
-            </span>
-            <div class="divisor-vertical"></div>
-            <span>
-                relevando dados instantâneos que contribuem para a tomada de
-                decisão por meio de algoritimos e inteligência artificial.
-                Trabalhamos com muita coragem e paixão na busca pela gestão
-                financeira precisa e descomplicada. Somos brasileiros que
-                enxergam o mundo financeiro em movimento, e acreditamos que
-                cada indivíduo e organização precisam não somente acompanhar,
-                mas principalmente estar à frente dessa evolução.
-            </span>
+        <img class="img-logo" src="./images/logoCortada.svg" alt="">
+        <div class="description">
+            <div class="description-about">
+                <span>
+                    Acreditamos em um mundo donde o equelíbrio e a
+                    transparência
+                    são condições findamentais para sua sustentabilidade. Em
+                    razão
+                    disso, investimos na inocação que empodera pessoas e
+                    negócios
+                    frente ao ja poderoso sistema financeiro. Para que
+                    bancos e
+                    clientes joguem sempre com as mesmas regras. Para
+                    ganharem
+                    juntos, para ganharem o justo. Para estarem todos de um
+                    mesmo
+                    lado. Temos um olhar tecnológico minucioso que ajuda a
+                    encontrar soluções para essa necessária relação de
+                    confiança,
+                </span>
+                <div class="divisor-vertical"></div>
+                <span>
+                    relevando dados instantâneos que contribuem para a
+                    tomada de
+                    decisão por meio de algoritimos e inteligência
+                    artificial.
+                    Trabalhamos com muita coragem e paixão na busca pela
+                    gestão
+                    financeira precisa e descomplicada. Somos brasileiros
+                    que
+                    enxergam o mundo financeiro em movimento, e acreditamos
+                    que
+                    cada indivíduo e organização precisam não somente
+                    acompanhar,
+                    mas principalmente estar à frente dessa evolução.
+                </span>
+            </div>
         </div>
     </section>
+    <a id="contato">
+        <div class="contact">
+            <div class="contact-message">
+                <h1>
+                    Saiba mais sobre a evolução <br />
+                    que a OpenBank Brasil quer
+                    proporcionar para a sua empresa.
+                </h1>
+
+                <h5>
+                    Envie uma mensagem <br>
+                    ou fale diretamente conosco <br>
+                    através dos nossos canais <br>
+                    de atendimento abaixo:
+                </h5>
+
+                <div class="contact-image">
+                    <h3>nossos contatos:</h3>
+                    <img src="./images/whatsapp.svg" alt="">
+                    <img src="./images/chat.svg" alt="">
+                    <img src="./images/phone.svg" alt="">
+                </div>
+            </div>
+            <div class="contact-form">
+                <div class="redes-sociais">
+                    <img src="./images/facebook.svg" alt="">
+                    <img src="./images/linkedin.svg" alt="">
+                    <img src="./images/instagram.svg" alt="">
+                    <img src="./images/youtube.svg" alt="">
+                </div>
+                <form action="#">
+                    <input type="text" placeholder="Nome">
+                    <input type="email" placeholder="E-mail">
+                    <input type="telefone" placeholder="Telefone">
+                    <select type="text">
+                        <option selected disabled value="">Selecionar seu perfil</option>
+                        <option value="a">Administrador</option>
+                        <option value="a">Usário</option>
+                        <option value="a">Primeiro Contato</option>
+                    </select>
+                    <textarea placeholder="Mensagem" cols="30" rows="10"></textarea>
+                    <button type="button" class="btn">
+                        <i class="fas fa-arrow-right"></i>
+                        enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+        <section class="certification">
+            <div class="cetificated">
+                <h1>
+                    Certificações de <br>
+                    segurança e parcerias
+                </h1>
+                <h6>Powered by:</h6>
+            </div>
+            <div class="cetificated-image">
+                <div class="selo">
+                    <h1>
+                        Associação dos peritos, <br>
+                        avaliadores, mediadores, <br>
+                        árbitros, intérpretes e <br>
+                        interventores do Paraná.
+                    </h1>
+                    <h6>Powered by:</h6>
+                </div>
+                <img src="./images/selo.svg" alt="">
+            </div>
+        </section>
+        <section class="powered">
+            <div class="by-one">
+                <img src="./images/cloudflare.svg" alt="">
+                <img src="./images/kaspersky.svg" alt="">
+                <img src="./images/googleAI.svg" alt="">
+                <img src="./images/globalSign.svg" alt="">
+            </div>
+            <div class="by-two">
+                <img src="./images/iso27001.svg" alt="">
+                <img src="./images/aicpa.svg" alt="">
+                <img src="./images/pci.svg" alt="">
+                <img src="./images/aicpa2.svg" alt="">
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="rede-social">
+                <img src="./images/facebook.svg" alt="">
+                <img src="./images/linkedin.svg" alt="">
+                <img src="./images/instagram.svg" alt="">
+                <img src="./images/youtube.svg" alt="">
+            </div>
+            <div class="logo-footer">
+                <img src="./images/logofooter.svg" alt="">
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="video-test/js/global.min.js"></script>
+        <script src="video-test/vendor/video.js/videojs.min.js"></script>
+        <script src="video-test/vendor/video.js/videojs-playlist.min.js"></script>
+        <script src="video-test/vendor/video.js/videojs-playlist-ui.min.js"></script>
+        <script src="script.js"></script>
 </body>
 
 </html>
