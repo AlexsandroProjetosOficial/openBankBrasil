@@ -8189,7 +8189,8 @@ img.down-arrow {
     padding: 0;
     margin: 0;
     transform: skewX(-40deg);
-    transform-origin: 0 0
+    transform-origin: 0 0;
+    cursor: pointer;
 }
 
 #landing-container div#main-video-playlist ol li.vjs-playlist-item {
@@ -8214,7 +8215,7 @@ img.down-arrow {
     width: 25%;
     height: 100%;
     left: -25%;
-    z-index: 99;
+    z-index: 1000;
     top: 0
 }
 
